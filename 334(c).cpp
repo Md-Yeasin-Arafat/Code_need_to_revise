@@ -72,10 +72,9 @@ int main()
         }
 
         ans=sum;
-        for(auto u:vs)cout<<u<<" ";cout<<endl;
-        for(int i=2;i<vs.size();i+=2){ cout<<sum<<" ";
-            sum+=vs[i-1] - vs[i-2];cout<<sum<<" ";
-            sum-=vs[i]-vs[i-1];cout<<sum<<endl;
+        for(int i=2;i<vs.size();i+=2){ 
+            sum+=vs[i-1] - vs[i-2];
+            sum-=vs[i]-vs[i-1];
             ans=min(ans,sum);
         }
     }
@@ -84,7 +83,10 @@ int main()
     
     
     
-    
+//    8 5
+// 1 2 4 7 8
+// ans = 2
+
     
     
     
